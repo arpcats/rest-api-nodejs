@@ -44,7 +44,7 @@ app.post('/user', function (req, res) {
         return res.status(400).send({ error:true, message: 'Please provide user' });
     }
  
-    dbConn.query("INSERT INTO users SET ? ", { user: user }, function (error, results, fields) {
+    dbConn.query("INSERT INTO users SET ? ", user, function (error, results, fields) {
         if (error) throw error;
         return res.send({ error: false, data: results, message: 'New user has been created successfully.' });
     });

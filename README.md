@@ -45,7 +45,7 @@ API URL :-  http://127.0.0.1/user/1
 Method :- GET
 
 Create New User REST API
-API URL :- http://127.0.0.1:3000/add
+API URL :- http://127.0.0.1:3000/user
 Method :- POST
 
 Update User REST API
